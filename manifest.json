@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "PB",
+  "version": "1.0",
+
+  "description": "Ajoute une taux journalier ou mensuler au site PeerBerry.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.peerberry.com/*"],
+      "js": ["PB.js"]
+    }
+  ]
+
+}
